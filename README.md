@@ -65,7 +65,7 @@ Then I wrote this *README.md* and launched
 
 ```
 make
-git commit -am 'first ( and only :metal: ) release'
+git commit -a -m 'first ( and only :metal: ) release'
 npm publish
 ```
 
