@@ -1,0 +1,26 @@
+{
+  "name": "not-defined",
+  "version": "1.0.0",
+  "description": "is a shortcut to typeof foo === 'undefined'",
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/not-defined.git"
+  },
+  "keywords": [
+    "typeof",
+    "undefined"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/not-defined/issues"
+  },
+  "homepage": "http://npm.im/not-defined"
+}
