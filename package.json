@@ -1,7 +1,7 @@
 {
   "name": "not-defined",
-  "version": "1.0.0",
-  "description": "is a shortcut to typeof foo === 'undefined'",
+  "version": "1.1.0",
+  "description": "is a shortcut to (typeof foo === 'undefined') || (foo === null)",
   "author": {
     "name": "Gianluca Casati",
     "url": "http://g14n.info"
@@ -16,7 +16,9 @@
   },
   "keywords": [
     "typeof",
-    "undefined"
+    "undefined",
+    "null",
+    "defined"
   ],
   "license": "MIT",
   "bugs": {
