@@ -4,6 +4,7 @@
 
 [Installation](#installation) |
 [Usage](#usage) |
+[Annotated source](#annotated-source) |
 [License](#license)
 
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
