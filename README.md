@@ -55,9 +55,9 @@ if (no(foo)) {
 ## Annotated source
 
 This is my first npm package written using [KISS Literate Programming][KLP].
-It is a very basic, plain ES5 function that is 73 characters long
+It is a very basic, plain ES5 function that is 42 characters long
 
-    module.exports=function(x){return (typeof x==='undefined')||(x === null)}
+    module.exports=function(x){return x==null}
 
 ## License
 
