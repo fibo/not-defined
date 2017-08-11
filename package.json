@@ -1,6 +1,6 @@
 {
   "name": "not-defined",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "is a shortcut to (typeof foo === 'undefined') || (foo === null)",
   "author": {
     "name": "Gianluca Casati",
