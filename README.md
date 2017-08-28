@@ -1,6 +1,6 @@
 # not-defined
 
-> is a shortcut to `(typeof foo === 'undefined') || (foo === null)`
+> checks if foo is not defined, i.e. undefined, null, an empty string, array or object
 
 [Installation](#installation) |
 [Usage](#usage) |
@@ -27,10 +27,10 @@ if (notDefined(foo)) {
 }
 ```
 
-is equivalent to
+is equivalent to the following pseudocode
 
-```javascript
-if ((typeof foo === 'undefined') || (foo === null)) {
+```
+if (foo is not defined, i.e. is not null, undefined, an empty string, array, object) {
   // do something, usually throw a TypeError
 }
 ```
@@ -50,14 +50,16 @@ if (no(foo)) {
 * Type less.
 * Better readability (even your boss will understand your code ^:).
 * Can save bytes in your builds.
-* Easier to autocomplete in editors.
+* Easier to autocomplete in editors (for instance easier than `typeof foo === 'undefined'`).
 
 ## Annotated source
 
 This is my first npm package written using [KISS Literate Programming][KLP].
-It is a very basic, plain ES5 function that is 42 characters long
+It is plain ES5 function that is 107 characters long.
 
-    module.exports=function(x){return x == null}
+    module.exports=function(x){return x == null||x.length<1||(typeof x == 'object'&& Object.keys(x).length<1)}
+
+Snippet `length < 1` is used instead of equivalent `length == 0` to save two characters, considering it is used twice.
 
 ## License
 
