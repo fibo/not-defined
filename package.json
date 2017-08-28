@@ -1,6 +1,6 @@
 {
   "name": "not-defined",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array or object",
   "author": {
     "name": "Gianluca Casati",
