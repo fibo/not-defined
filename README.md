@@ -47,6 +47,21 @@ if (no(foo)) {
 }
 ```
 
+Follows a list of [tested examples](https://github.com/fibo/not-defined/blob/master/test.js)
+
+```javascript
+no() // true
+no(null) // true
+no([]) // true
+no({}) // true
+
+no(false) // false
+no(0) // false
+no('string') // false
+no({ foo: true }) // false
+no(['foo']) // false
+```
+
 ### Pros
 
 * Type less.

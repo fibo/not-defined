@@ -1,7 +1,8 @@
-const assert = require('assert')
-const no = require('not-defined')
+var assert = require('assert')
+var no = require('not-defined')
 
-assert.ok(no(), 'undefined')
+assert.ok(no(), 'no param')
+assert.ok(no(undefined), 'undefined')
 assert.ok(no(null), 'null')
 assert.ok(no(''), 'empty string')
 assert.ok(no([]), 'empty array')
