@@ -1,1 +1,1 @@
-module.exports=function(x){return typeof x==='undefined'||x === null}
+module.exports=function(x){return x == null}
