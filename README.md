@@ -74,7 +74,7 @@ no(['foo']) // false
 This is my first npm package written using [KISS Literate Programming][KLP].
 It is plain ES5 function that is 107 characters long.
 
-    module.exports=function(x){return x == null||x.length<1||(typeof x == 'object'&& Object.keys(x).length<1)}
+    module.exports=function(x){return x == null||(x.length<1 && typeof x != 'function')||(typeof x == 'object'&& Object.keys(x).length<1)}
 
 Snippet `length < 1` is used instead of equivalent `length == 0` to save two characters, considering it is used twice.
 
