@@ -51,15 +51,21 @@ Follows a list of [tested examples](https://github.com/fibo/not-defined/blob/mas
 
 ```javascript
 no() // true
+no(undefined) // true
 no(null) // true
+no('') // true
 no([]) // true
 no({}) // true
 
-no(false) // false
 no(0) // false
+no(true) // false
+no(false) // false
 no('string') // false
-no({ foo: true }) // false
 no(['foo']) // false
+no({ foo: true }) // false
+no(42) // false
+no(Infinity) // false
+no(function () { return 1 }) // false
 ```
 
 ### Pros
