@@ -7,6 +7,7 @@ assert.ok(no(null), 'null')
 assert.ok(no(''), 'empty string')
 assert.ok(no([]), 'empty array')
 assert.ok(no({}), 'empty object')
+assert.ok(no(NaN), 'not a number')
 
 assert.ok(!no(0), '0 is defined')
 assert.ok(!no(true), 'true is defined')

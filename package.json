@@ -1,7 +1,7 @@
 {
   "name": "not-defined",
   "version": "2.0.2",
-  "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array or object",
+  "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array, object or NaN",
   "author": {
     "name": "Gianluca Casati",
     "url": "http://g14n.info"
