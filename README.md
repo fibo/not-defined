@@ -31,7 +31,7 @@ if (notDefined(foo)) {
 is equivalent to the following pseudocode
 
 ```
-if (foo is not defined, i.e. is not null, undefined, an empty string, array, object) {
+if (foo is not defined, i.e. is null, undefined, NaN, an empty string, array or object) {
   // do something, usually throw a TypeError
 }
 ```
