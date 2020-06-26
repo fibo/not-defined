@@ -79,7 +79,7 @@ no(function () { return 1 }) // false
 
 This is my first npm package written using [KISS Literate Programming][KLP].
 
-    module.exports=function(x){return x==null||(typeof x == 'number'&&isNaN(x))||(x.length<1&&typeof x!='function')||(typeof x=='object'&&x.constructor.name=='Object'&&Object.keys(x).length<1)}
+    function notDefined(x){return x==null||(typeof x == 'number'&&isNaN(x))||(x.length<1&&typeof x!='function')||(typeof x=='object'&&x.constructor.name=='Object'&&Object.keys(x).length<1)}try{module.exports=notDefined}catch(e){}
 
 Snippet `length<1` is used instead of equivalent `length==0` to save two characters, considering it is used twice.
 
