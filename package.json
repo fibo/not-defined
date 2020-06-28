@@ -1,13 +1,13 @@
 {
   "name": "not-defined",
   "type": "module",
-  "version": "2.1.4",
+  "version": "3.0.0",
   "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array, object or NaN",
   "main": "not-defined.js",
   "module": "not-defined.js",
   "browser": "common.js",
   "engines": {
-    "node" : ">=0.12"
+    "node": ">=0.12"
   },
   "author": {
     "name": "Gianluca Casati",
