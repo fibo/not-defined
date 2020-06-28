@@ -1,5 +1,6 @@
-var assert = require('assert')
-var no = require('not-defined')
+import assert from 'assert'
+
+import no from './not-defined.js'
 
 assert.ok(no(), 'no param')
 assert.ok(no(undefined), 'undefined')
