@@ -80,7 +80,7 @@ Since version 3, packages is a native ES6 module.
 CommonJS imports are still supported, try this
 
 ```js
-const no = require('not-defined/common.js')
+const no = require('not-defined/common.cjs')
 ```
 
 ## License
