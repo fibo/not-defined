@@ -7,7 +7,7 @@
   "module": "not-defined.js",
   "browser": "common.cjs",
   "engines": {
-    "node": ">=0.14"
+    "node": ">=14"
   },
   "author": {
     "name": "Gianluca Casati",
