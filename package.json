@@ -1,7 +1,7 @@
 {
   "name": "not-defined",
   "type": "module",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array, object or NaN",
   "main": "not-defined.cjs",
   "module": "not-defined.js",
