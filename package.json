@@ -3,7 +3,7 @@
   "type": "module",
   "version": "3.0.4",
   "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array, object or NaN",
-  "main": "not-defined.js",
+  "main": "not-defined.cjs",
   "module": "not-defined.js",
   "engines": {
     "node": ">=14"

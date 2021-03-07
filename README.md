@@ -73,16 +73,6 @@ no(function () { return 1 }) // false
 * Can save bytes in your builds.
 * Easier to autocomplete in editors (for instance easier than `typeof foo === 'undefined'`).
 
-### CommonJS
-
-Since version 3, packages is a native ES6 module.
-
-CommonJS imports are still supported, try this
-
-```js
-const no = require('not-defined/common.cjs')
-```
-
 ## License
 
 [MIT](http://g14n.info/mit-license)
