@@ -2,17 +2,18 @@
 
 > checks if foo is not defined, i.e. undefined, null, an empty string, array, object or NaN
 
-[Installation](#installation) |
-[Usage](#usage) |
-[License](#license)
-
-[![NPM version](https://badge.fury.io/js/not-defined.svg)](http://badge.fury.io/js/not-defined)
-
 ## Installation
 
 ```bash
 npm install not-defined
 ```
+
+## Pros
+
+* Type less.
+* Better readability (even your boss will understand your code ^:).
+* Can save bytes in your builds.
+* Easier to autocomplete in editors (for instance easier than `typeof foo === 'undefined'`).
 
 ## Usage
 
@@ -65,13 +66,6 @@ no(42) // false
 no(Infinity) // false
 no(function () { return 1 }) // false
 ```
-
-### Pros
-
-* Type less.
-* Better readability (even your boss will understand your code ^:).
-* Can save bytes in your builds.
-* Easier to autocomplete in editors (for instance easier than `typeof foo === 'undefined'`).
 
 ## License
 

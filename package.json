@@ -10,11 +10,11 @@
   },
   "author": {
     "name": "Gianluca Casati",
-    "url": "http://g14n.info"
+    "url": "https://fibo.github.io"
   },
   "scripts": {
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin main",
-    "test": "node --experimental-modules test"
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,5 @@
   "bugs": {
     "url": "https://github.com/fibo/not-defined/issues"
   },
-  "homepage": "http://g14n.info/not-defined"
+  "homepage": "https://fibo.github.io/not-defined"
 }
