@@ -1,10 +1,11 @@
 {
   "name": "not-defined",
   "type": "module",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "checks if foo is not defined, i.e. undefined, null, an empty string, array, object or NaN",
-  "main": "not-defined.cjs",
-  "module": "not-defined.js",
+  "main": "./not-defined.cjs",
+  "types": "./not-defined.d.ts",
+  "exports": "./not-defined.js",
   "engines": {
     "node": ">=14"
   },
@@ -13,8 +14,7 @@
     "url": "https://fibo.github.io"
   },
   "scripts": {
-    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin main",
-    "test": "node --test"
+    "test": "node test.js && node test.cjs"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fibo/not-defined/issues"
-  },
-  "homepage": "https://fibo.github.io/not-defined"
+  }
 }

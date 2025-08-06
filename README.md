@@ -45,6 +45,33 @@ if (no(foo)) {
 }
 ```
 
+A real use case: suppose you have a JSX that gets an array of `items` from an API.
+If the array of `items` is empty, you want to render a message.
+
+Instead of
+
+```js
+if (isLoading) {
+  return <p>Loading...</p>
+}
+
+if (Array.isArray(items) && items.length === 0) {
+  return <p>No items found</p>
+}
+```
+
+you can write
+
+```js
+if (isLoading) {
+  return <p>Loading...</p>
+}
+
+if (no(items)) {
+  return <p>No items found</p>
+}
+```
+
 Follows a list of [tested examples](https://github.com/fibo/not-defined/blob/master/test.js)
 
 ```javascript
@@ -65,9 +92,11 @@ no({ foo: true }) // false
 no(42) // false
 no(Infinity) // false
 no(function () { return 1 }) // false
+no(0n) // false
+no(Symbol('foo')) // false
 ```
 
 ## License
 
-[MIT](http://g14n.info/mit-license)
+[MIT](https://fibo.github.io/mit-license)
 

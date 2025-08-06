@@ -1,25 +1,26 @@
-import { strict as assert } from "node:assert"
-import { test } from "node:test"
+import { strict } from 'node:assert'
+import { test } from 'node:test'
 
-import no from './not-defined.js'
+import no from 'not-defined'
 
 test('not-defined', () => {
-  assert.ok(no(), 'no param')
-  assert.ok(no(undefined), 'undefined')
-  assert.ok(no(null), 'null')
-  assert.ok(no(''), 'empty string')
-  assert.ok(no([]), 'empty array')
-  assert.ok(no({}), 'empty object')
-  assert.ok(no(NaN), 'not a number')
-  
-  assert.ok(!no(0), '0 is defined')
-  assert.ok(!no(true), 'true is defined')
-  assert.ok(!no(false), 'false is defined')
-  assert.ok(!no('string'), 'a string is defined')
-  assert.ok(!no(['foo']), 'an array is defined')
-  assert.ok(!no({foo: true}), 'an object is defined')
-  assert.ok(!no(42), '"the answer" is defined')
-  assert.ok(!no(Infinity), 'Infinity is defined')
-  assert.ok(!no(function () { return 1 }), 'A function with no arguments is defined')
-  assert.ok(!no(0n), '0 bigint is defined')
+  strict.equal(true, no(), 'no param')
+  strict.equal(true, no(undefined), 'undefined')
+  strict.equal(true, no(null), 'null')
+  strict.equal(true, no(''), 'empty string')
+  strict.equal(true, no([]), 'empty array')
+  strict.equal(true, no({}), 'empty object')
+  strict.equal(true, no(NaN), 'not a number')
+
+  strict.equal(false, no(0), '0 is defined')
+  strict.equal(false, no(true), 'true is defined')
+  strict.equal(false, no(false), 'false is defined')
+  strict.equal(false, no('string'), 'a string is defined')
+  strict.equal(false, no(['foo']), 'an array is defined')
+  strict.equal(false, no({foo: true}), 'an object is defined')
+  strict.equal(false, no(42), '"the answer" is defined')
+  strict.equal(false, no(Infinity), 'Infinity is defined')
+  strict.equal(false, no(function () { return 1 }), 'A function with no arguments is defined')
+  strict.equal(false, no(0n), '0 bigint is defined')
+  strict.equal(false, no(Symbol('foo')), 'A Symbol is defined')
 })
