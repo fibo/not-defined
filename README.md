@@ -12,7 +12,7 @@ npm install not-defined
 
 * Type less.
 * Better readability (even your boss will understand your code ^:).
-* Can save bytes in your builds.
+* Can save bytes in your builds (not-defined modules occupies only 171B).
 * Easier to autocomplete in editors (for instance easier than `typeof foo === 'undefined'`).
 
 ## Usage
