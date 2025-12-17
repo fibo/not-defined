@@ -4,7 +4,7 @@
 
 ## Installation
 
-```bash
+```shell
 npm install not-defined
 ```
 
@@ -12,14 +12,20 @@ npm install not-defined
 
 * Type less.
 * Better readability (even your boss will understand your code ^:).
-* Can save bytes in your builds (not-defined modules occupies only 171B).
+* Can save bytes in your builds (not-defined module occupies only 171B).
 * Easier to autocomplete in editors (for instance easier than `typeof foo === 'undefined'`).
 
 ## Usage
 
+Signature is:
+
+```ts
+function notDefined(arg: any): boolean;
+```
+
 This snippet of code
 
-```javascript
+```js
 import notDefined from 'not-defined'
 
 if (notDefined(foo)) {
@@ -37,7 +43,7 @@ if (foo is not defined, i.e. is null, undefined, NaN, an empty string, array or 
 
 You can also use a shorter but still semantic form like
 
-```javascript
+```js
 import no from 'not-defined'
 
 if (no(foo)) {
@@ -72,9 +78,9 @@ if (no(items)) {
 }
 ```
 
-Follows a list of [tested examples](https://github.com/fibo/not-defined/blob/master/test.js)
+Follows a list of [tested examples](https://github.com/fibo/not-defined/blob/main/test.js)
 
-```javascript
+```js
 no() // true
 no(undefined) // true
 no(null) // true
@@ -99,4 +105,3 @@ no(Symbol('foo')) // false
 ## License
 
 [MIT](https://fibo.github.io/mit-license)
-
